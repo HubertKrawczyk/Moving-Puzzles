@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Hubert Krawczyk">
+  <title>JavaScript puzzle</title>
+  <link rel="stylesheet" href="./public/style/stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=0">
+  
+</head>
+
+<body>
+  <main>
+    <div id="canvasContainer">
+    <canvas id="puzzleCanvas" width="1600" height="800"></canvas>
+    </div>
+    <div class="leftContainer">
+      <button id="showButton">Show image</button>
+
+      <p>Number of puzzles:</p>
+      Low(Easy)
+      <input type="range" name="puzzleSizeRange" id="puzzleSizeRange" min="0" max="2" value="1">
+      High(Difficult)
+      <p>Small puzzle speed:</p>
+      Stationary
+      <input type="range" name="puzzleSpeedRange" id="puzzleSpeedRange" min="0" max="3" value="1">
+      Fast
+      <br>
+      <label for="gridCheckbox">Show grid?</label>
+      <input type="checkbox" name="gridCheckbox" id="gridCheckbox" checked>
+      <br>
+      <button id="resetButton">Refresh Page (Reset All)</button>
+
+    </div>
+    <div class="rightContainer">
+      <p>Choose an image:</p>
+
+      <input type="file" id="uploadImage" name="uploadImage" accept="image/png, image/jpeg">
+      <label for="selectImage">Or choose from one of premade images</label>
+      <select id="selectImage" name="selectImage">
+        <option>Collider</option>
+        <option>Car</option>
+        <option>Cow</option>
+      </select>
+      <br>
+      <canvas id="miniCanvas" width="400px" height="266px"></canvas>
+
+
+
+    </div>
+
+
+
+  </main>
+  <footer>
+    <p>JavaScript puzzle
+      <br>
+      &copy; 2019 Hubert Krawczyk
+      <br>
+      Used Images:
+      <ul>
+        <li>Car: <a href="http://www.hdcarwallpapers.com/2019_porsche_718_cayman_gts_4k-wallpapers.html">www.hdcarwallpapers.com</a></li>
+        <li>Cow: <a href="https://www.flickr.com/photos/fdecomite/250315937/in/photolist-o7Wd2-6N8VeL-5jSJJc-5uB9Yt-bVB85c-4JgYG5-5DCKFx-8aMQSb-cjdKwN-7iTaJ8-EnvgV-2nw1f7-aw5r2Z-a5RgQe-eWditb-8aJzq2-artbzi-5DH9bS-puSWU-3Lnqb5-UHETne-pwVSAX-awjgpW-c7hmoo-612">www.flickr.com</a></li>
+        <li>Collider: <a href="https://www.universetoday.com/wp-content/uploads/2018/12/nwOtx-2000x1200.jpg">www.universetoday.com</a> </li>
+        <li>Wood: <a href="https://images.unsplash.com/photo-1510148199876-8a856ee41d42">unsplash.com</a></li>
+        <li>Canvas: <a href="https://unsplash.com/photos/-4Q0Zx_po_0">unsplash.com</a></li>
+    </ul>
+    </p>
+  </footer>
+  <script src="./scripts/jquery.js"></script>
+  <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
