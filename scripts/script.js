@@ -161,16 +161,16 @@ selectImage.onchange = function (e) { clearWhite(); drawLoadMessage(); chooseIma
 function chooseImage() {
   switch (selectImage.value.toLowerCase()) {
     case 'car':
-      puzzleImage.src = "public/images/images/car.jpg";
+      puzzleImage.src = "public/images/car.jpg";
       break;
     case 'cow':
-      puzzleImage.src = "public/images/images/cow.jpg";
+      puzzleImage.src = "public/images/cow.jpg";
       break;
     case 'collider':
-      puzzleImage.src = "public/images/images/collider.jpg";
+      puzzleImage.src = "public/images/collider.jpg";
       break;
     default:
-      puzzleImage.src = "public/images/images/collider.jpg";
+      puzzleImage.src = "public/images/collider.jpg";
   }
 }
 gridCheckbox.onchange = function () {
