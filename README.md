@@ -1,1 +1,3 @@
 An old project of mine created during my first year at the Uni. The code style is a classic "spaghetti code" so please refrain from trying to understand the script files...
+
+Try it out here: https://hubertkrawczyk.github.io/Moving-Puzzles/
